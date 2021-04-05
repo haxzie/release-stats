@@ -1,0 +1,35 @@
+/* ./assets/css/tailwind.css */
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap"); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind forms;
+
+@layer base {
+    @font-face {
+        font-family: Inter;
+        font-weight: 400;
+        src: url("../fonts/static/Inter-Regular.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: Inter;
+        font-weight: 500;
+        src: url("../fonts/static/Inter-Medium.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: Inter;
+        font-weight: 300;
+        src: url("../fonts/static/Inter-Light.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: Inter;
+        font-weight: 600;
+        src: url("../fonts/static/Inter-SemiBold.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: Inter;
+        font-weight: 700;
+        src: url("../fonts/static/Inter-Bold.ttf") format("truetype");
+    }
+}
