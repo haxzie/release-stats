@@ -16,7 +16,7 @@ body,
 #__nuxt,
 #__layout{
   min-width: 100%;
-  min-height: 100%;
+  height: 100%;
 }
 
 *,
@@ -33,10 +33,12 @@ body,
   min-height: 100%;
   @apply bg-lightBlue;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
   .contents {
     display: flex;
+    flex: 1;
+    height: 100%;
     flex-direction: column;
     width: 100%;
   }
