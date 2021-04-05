@@ -1,5 +1,6 @@
 # Release Stats
 > Calculates and displays the downloads and distribution of your GitHub releases
+![Screenshot_2021-04-05 GitHub Release Stats](https://user-images.githubusercontent.com/53584487/113553612-aca66e00-9615-11eb-907f-533393bdf8ed.png)
 
 
 ## Build Setup
