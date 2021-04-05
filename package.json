@@ -19,7 +19,7 @@
     "cookieparser": "^0.1.0",
     "core-js": "^3.8.3",
     "image-viewer-vue": "^2.0.6",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "luxon": "^1.26.0",
     "nuxt": "^2.14.12",
     "nuxt-webfontloader": "^1.1.0",
