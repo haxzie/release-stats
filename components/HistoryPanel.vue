@@ -5,7 +5,7 @@
       v-for="repository in history"
       :key="repository.id"
       @click="$emit('load', repository.full_name)"
-      class="flex flex-col bg-white rounded shadow-sm hover:shadow-lg cursor-pointer"
+      class="flex flex-col bg-white rounded shadow-sm hover:shadow-lg cursor-pointer overflow-hidden"
     >
       <div class="texts p-4">
         <h4 class="text-lg text-secondary">

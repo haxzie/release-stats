@@ -1,5 +1,5 @@
 <template>
-  <div class="parent">
+  <div class="parent bg-blueGray-100">
     <div class="contents">
       <Nuxt />
     </div>
@@ -31,7 +31,6 @@ body,
 .parent {
   width: 100%;
   min-height: 100%;
-  @apply bg-lightBlue;
   display: flex;
   flex-direction: column;
 
