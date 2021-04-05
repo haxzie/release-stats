@@ -45,10 +45,7 @@ import mIcon from './m-icon.vue'
 export default {
   components: { mIcon },
   props: {
-    releases: {
-      type: Array,
-      required: true,
-    },
+
   },
   data() {
     return {
@@ -78,6 +75,9 @@ export default {
         )
       )
         return
+        this.$router.replace({
+          path: `/?repo=${this.searchQuery}`
+        })
       this.isFetching = true
       try {
         const { status, data } = await this.$axios.get(
@@ -91,6 +91,13 @@ export default {
       this.isFetching = false
     },
   },
+  mounted() {
+    const { repo } = this.$route.query;
+    if (repo) {
+      this.searchQuery = repo;
+      this.fetchRepository();
+    }
+  }
 }
 </script>
 
