@@ -1,4 +1,6 @@
-# carzoo-app
+# Release Stats
+> Calculates and displays the downloads and distribution of your GitHub releases
+
 
 ## Build Setup
 
