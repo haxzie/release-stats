@@ -9,23 +9,23 @@
       </h4>
     </div>
     <div class="grid grid-cols-2 gap-2">
-      <div class="latest-version flex-flex-col items-start p-4">
+      <div class="latest-version flex flex-col items-start p-4">
         <div class="texts">
           <h4 class="text-secondary">Latest Version</h4>
           <span class="text-sm text-secondaryLight">{{ latestVersion }}</span>
         </div>
-        <p class="value text-secondary my-2 text-3xl font-semibold">
+        <p class="value text-secondary my-2 text-3xl font-semibold flex-grow flex items-end">
           {{ formatNumber(latestVersionDownloads) }}
         </p>
       </div>
-      <div class="latest-version flex-flex-col items-start p-4">
+      <div class="latest-version flex flex-col items-start p-4">
         <div class="texts">
           <h4 class="text-secondary">Total Downloads</h4>
           <span class="text-sm text-secondaryLight"
             >{{ getFormattedDates }}</span
           >
         </div>
-        <p class="value text-secondary my-2 text-3xl font-semibold">
+        <p class="value text-secondary my-2 text-3xl font-semibold flex-grow flex items-end">
           {{ formatNumber(totalDownloads) }}
         </p>
       </div>

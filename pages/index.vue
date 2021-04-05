@@ -1,6 +1,6 @@
 <template>
   <div class="page-container h-full mx-auto py-4 sm:px-2">
-    <SearchPanel class="mt-4" @loaded="setReleases" />
+    <SearchPanel class="mt-2" @loaded="setReleases" />
     <DownloadStats v-if="releases && releases.length > 0" :releases="releases" class="mt-2" />
     <ReleaseStats v-if="releases && releases.length > 0" :releases="releases" class="mt-2" />
   </div>

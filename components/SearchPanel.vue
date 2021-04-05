@@ -6,10 +6,9 @@
       class="search-input flex flex-row items-center pl-3 pr-2 py-1"
       @submit.prevent="fetchRepository"
     >
-      <m-icon class="text-secondaryLight">search</m-icon>
       <input
         type="text"
-        class="input-search"
+        class="input-search text-lg md:text-2xl"
         placeholder="username/repository"
         v-model="searchQuery"
       />
@@ -17,7 +16,7 @@
         class="search-button flex items-center justify-center cursor-pointer rounded text-blue-400 hover:bg-blue-100 hover:text-blue-500"
         @click="fetchRepository"
       >
-        <m-icon>arrow_forward</m-icon>
+        <m-icon size="24" class="text-secondaryLight">search</m-icon>
       </div>
     </form>
     <div
@@ -44,9 +43,7 @@
 import mIcon from './m-icon.vue'
 export default {
   components: { mIcon },
-  props: {
-
-  },
+  props: {},
   data() {
     return {
       searchQuery: '',
@@ -75,9 +72,9 @@ export default {
         )
       )
         return
-        this.$router.replace({
-          path: `/?repo=${this.searchQuery}`
-        })
+      this.$router.replace({
+        path: `/?repo=${this.searchQuery}`,
+      })
       this.isFetching = true
       try {
         const { status, data } = await this.$axios.get(
@@ -92,12 +89,12 @@ export default {
     },
   },
   mounted() {
-    const { repo } = this.$route.query;
+    const { repo } = this.$route.query
     if (repo) {
-      this.searchQuery = repo;
-      this.fetchRepository();
+      this.searchQuery = repo
+      this.fetchRepository()
     }
-  }
+  },
 }
 </script>
 
@@ -108,8 +105,8 @@ export default {
   .input-search {
     flex: 1;
     background: transparent;
+    border: 0;
     @apply p-2;
-    @apply text-lg;
     @apply outline-none;
     @apply text-secondary;
   }
