@@ -58,9 +58,9 @@ export default {
       if (this.latestVersionStartTime) {
         const startDate = DateTime.fromJSDate(new Date(this.latestVersionStartTime));
         const formattedStartDate = startDate.toFormat("dd/MM/yyyy");
-        const endDate = DateTime.now();
-        const formattedEndDate = endDate.toFormat("dd/MM/yyyy");
-        return `From ${formattedStartDate} to ${formattedEndDate}`
+        // const endDate = DateTime.now();
+        // const formattedEndDate = endDate.toFormat("dd/MM/yyyy");
+        return `From ${formattedStartDate} `
       } else {
         return '-'
       }
@@ -88,7 +88,7 @@ export default {
         )
         this.latestVersionDownloads = latestVersionDownloads
         this.latestVersion = this.releases[0].tag_name
-        this.latestVersionStartTime = this.releases[0].published_at
+        this.latestVersionStartTime = this.releases[this.releases.length-1].published_at
       }
     },
   },

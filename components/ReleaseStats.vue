@@ -11,7 +11,7 @@
           @click="toggleVersionList"
         >
           <span class="flex-grow overflow-ellipsis overflow-hidden">{{
-            selectedVersion.name
+            selectedVersion.tag_name
           }}</span>
           <m-icon size="24">keyboard_arrow_down</m-icon>
         </div>
@@ -31,7 +31,7 @@
               class="flex p-2 cursor-pointer hover:bg-blueGray-100"
               @click="selectVersion(version)"
             >
-              <p class="overflow-ellipsis overflow-hidden">{{ version.name }}</p>
+              <p class="overflow-ellipsis overflow-hidden">{{ version.tag_name }}</p>
             </div>
           </div>
         </SlideYUpTransition>
