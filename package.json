@@ -32,7 +32,7 @@
     "vue-material-design-icons": "^4.11.0",
     "vue-material-icon": "^1.0.1",
     "vue2-transitions": "^0.3.0",
-    "weekstart": "^1.0.1"
+    "weekstart": "^1.1.0"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^3.4.2",
