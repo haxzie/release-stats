@@ -15,8 +15,8 @@ html,
 body,
 #__nuxt,
 #__layout{
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 *,
@@ -30,7 +30,7 @@ body,
 
 .parent {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   @apply bg-lightBlue;
   display: flex;
   flex-direction: row;
