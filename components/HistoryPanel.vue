@@ -51,7 +51,6 @@ export default {
     try {
       const oldHistory = JSON.parse(localStorage.getItem('history'))
       history = [...oldHistory]
-      console.log({ history })
     } catch (error) {
       console.error(error)
     }

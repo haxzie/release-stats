@@ -1,6 +1,6 @@
 <template>
   <div class="page-container h-full mx-auto py-4 sm:px-2">
-    <Header/>
+    <Header />
     <SearchPanel
       class="mt-2"
       v-model="searchQuery"
@@ -14,9 +14,9 @@
       <ReleaseStats :releases="releases" class="mt-2" />
     </template>
     <template v-else-if="!isFetching">
-      <HistoryPanel @load="loadRepository"/>
+      <HistoryPanel @load="loadRepository" />
     </template>
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
@@ -30,13 +30,26 @@ import Header from '~/components/Header'
 
 export default {
   layout: 'default',
+  head: {
+    title: 'Release Stats for GitHub Asset Downloads',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Get detailed download statistics about your GitHub releases and Release Assets.',
+      },
+    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+  },
   components: {
     SearchPanel,
     DownloadStats,
     ReleaseStats,
     HistoryPanel,
     Footer,
-    Header
+    Header,
   },
   data() {
     return {
@@ -51,8 +64,8 @@ export default {
   computed: {},
   methods: {
     loadRepository(query) {
-      this.searchQuery = query;
-      this.fetchRepository();
+      this.searchQuery = query
+      this.fetchRepository()
     },
     setRpository(repository) {
       this.repository = repository
@@ -73,16 +86,16 @@ export default {
         `/repos/${this.searchQuery}/releases`
       )
       if (status === 200 && data) {
-        this.releases = data;
+        this.releases = data
       } else {
-        this.releases = null;
+        this.releases = null
       }
     },
     async fetchRepository() {
       if (!this.searchQuery) {
-        this.releases = null;
-        this.repository = null;
-        this.$router.push("/")
+        this.releases = null
+        this.repository = null
+        this.$router.push('/')
       }
       if (
         !(
