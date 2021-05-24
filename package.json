@@ -9,7 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/auth-next": "5.0.0-1613647907.37b1156",
+    "@nuxtjs/auth-next": "5.0.0-1621716493.b9b36c6",
     "@nuxtjs/axios": "^5.13.1",
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/google-gtag": "^1.0.4",
