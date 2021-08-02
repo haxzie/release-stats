@@ -18,7 +18,7 @@
     "cookie-parser": "^1.4.5",
     "cookie-universal-nuxt": "^2.1.4",
     "cookieparser": "^0.1.0",
-    "core-js": "^3.8.3",
+    "core-js": "^3.16.0",
     "image-viewer-vue": "^2.0.6",
     "lodash": "^4.17.20",
     "luxon": "^1.26.0",
