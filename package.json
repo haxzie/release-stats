@@ -35,7 +35,7 @@
     "weekstart": "^1.0.1"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^3.4.2",
+    "@nuxtjs/tailwindcss": "^6.1.1",
     "autoprefixer": "^9.8.6",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
